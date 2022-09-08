@@ -15,6 +15,11 @@
   --light-blue: #5beaf7;
 }
 
+@font-face {
+  font-family: "Alien Encounters";
+  src: url("../assets/fonts/Alien-Encounters-Regular.ttf");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -42,8 +47,8 @@ body {
 
 .header__logo {
   width: 35%;
-  filter: drop-shadow(0px 0px 30px var(--pink))
-    drop-shadow(0px 0px 40px var(--pink));
+  filter: drop-shadow(0px 0px 25px var(--pink))
+    drop-shadow(0px 0px 35px var(--pink)) drop-shadow(0px 0px 50px var(--pink));
 }
 
 .header__burger-icon {
@@ -73,7 +78,7 @@ body {
   background: linear-gradient(
     90deg,
     rgba(98, 0, 84, 1) 0%,
-    rgba(56, 0, 56, 1) 35%,
+    rgba(56, 0, 56, 1) 25%,
     rgba(32, 1, 32, 1) 100%
   );
   box-shadow: 0px 0px 60px 5px var(--pink);
@@ -98,8 +103,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 50%;
-  height: 200px;
+  width: 70%;
+  height: 250px;
   margin-top: 50px;
   list-style: none;
   text-align: center;
@@ -107,11 +112,15 @@ body {
 }
 
 .mobile-menu__item {
-  font-size: 3rem;
+  /*  */
 }
 
 .mobile-menu__link {
+  font-size: 3rem;
   text-decoration: none;
+  font-family: "Alien Encounters";
+  text-shadow: 0px 0px 10px var(--light-blue), 0px 0px 30px var(--light-blue),
+    0px 0px 50px var(--light-blue);
   color: var(--white);
 }
 
@@ -120,10 +129,16 @@ body {
   align-items: center;
   justify-content: center;
   width: 20rem;
-  height: 5rem;
+  height: 8rem;
   margin-top: 50px;
-  font-size: 2.5rem;
+  font-family: "Alien Encounters";
+  font-size: 2.8rem;
+  color: var(--black);
   text-decoration: none;
-  color: var(--white);
-  border: 1px solid var(--white);
+  background-color: var(--white);
+  border-radius: 20px;
+  text-shadow: 0px 0px 20px var(--pink), 0px 0px 30px var(--pink),
+    0px 0px 60px var(--pink);
+  box-shadow: inset 0px 0px 30px 1px var(--pink), 0px 0px 50px 1px var(--pink);
+  border: 1px solid var(--pink);
 }
