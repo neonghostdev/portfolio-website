@@ -4,12 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./css/tablet.css"
+      media="screen and (min-width: 768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/desktop.css"
+      media="screen and (min-width: 1024px)"
+    />
+    <script src="./js/style.js" defer></script>
     <title>NeonGhostDev</title>
   </head>
   <body>
-    <nav></nav>
+    <header class="header">
+      <img
+        src="./assets/images/neon_ghost_logo_v2.png"
+        alt="logo"
+        class="header__logo"
+      />
+      <img
+        id="burgerIcon"
+        class="header__burger-icon"
+        src="./assets/icons/menu_gradient_blue_ligth.png"
+        alt="menu"
+      />
+      <nav class="mobile-menu" id="mobileMenu">
+        <img
+          id="closeMenuIcon"
+          src="./assets/icons/menu_close_gradient_blue_ligth.png"
+          alt="close-menu"
+          class="mobile-menu__close-icon"
+        />
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">About</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Portfolio</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">YouTube</a>
+          </li>
+        </ul>
+        <a href="#" class="mobile-menu__button">Contact</a>
+      </nav>
+    </header>
     <main>
-      <h1></h1>
+      <h1>JeanPaul Erazo</h1>
     </main>
     <footer></footer>
   </body>
