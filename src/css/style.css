@@ -20,6 +20,21 @@
   src: url("../assets/fonts/Alien-Encounters-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Streamster";
+  src: url("../assets/fonts/Streamster.ttf");
+}
+
+@font-face {
+  font-family: "Outrun future";
+  src: url("../assets/fonts/Outrun\ future.otf");
+}
+
+@font-face {
+  font-family: "Rocket Rinder";
+  src: url("../assets/fonts/Rocket\ Rinder.otf");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -36,7 +51,9 @@ body {
 }
 
 .header {
+  position: fixed;
   display: flex;
+  z-index: 3;
   align-items: center;
   justify-content: space-between;
   min-height: 7rem;
@@ -59,8 +76,6 @@ body {
     drop-shadow(0px 0px 45px var(--light-blue))
     drop-shadow(0px 0px 50px var(--light-blue));
   border-radius: 20px;
-  /* box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
-    0 0 200px #03e9f4; */
 }
 
 .mobile-menu {
@@ -72,17 +87,18 @@ body {
   top: 0px;
   right: 0px;
   height: 100vh;
-  width: 80%;
+  width: 70%;
   padding: 20px 10px;
-  background: rgb(98, 0, 84);
+  /* background: rgb(98, 0, 84); */
   background: linear-gradient(
     90deg,
-    rgba(98, 0, 84, 1) 0%,
-    rgba(56, 0, 56, 1) 25%,
-    rgba(32, 1, 32, 1) 100%
+    rgba(98, 0, 84, 0.5) 0%,
+    rgba(56, 0, 56, 0.5) 25%,
+    rgba(32, 1, 32, 0.5) 100%
   );
   box-shadow: 0px 0px 60px 5px var(--pink);
   border-left: 1px solid var(--pink);
+  backdrop-filter: blur(10px);
 }
 
 .mobile-menu__close-icon {
@@ -141,4 +157,64 @@ body {
     0px 0px 60px var(--pink);
   box-shadow: inset 0px 0px 30px 1px var(--pink), 0px 0px 50px 1px var(--pink);
   border: 1px solid var(--pink);
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  padding-top: 200px;
+  background: url("../assets/images/hero_background.jpg");
+  background-position: left;
+  background-size: cover;
+}
+
+.hero__title-container {
+  position: relative;
+  display: flex;
+  height: fit-content;
+}
+
+.hero__main-title {
+  z-index: 2;
+  font-size: 6rem;
+  font-weight: 500;
+  font-family: "Alien Encounters";
+  /* transform: rotate(-20deg); */
+  text-shadow: 0px 0px 20px var(--pink), 0px 0px 30px var(--pink),
+    0px 0px 60px var(--pink);
+}
+.hero__main-title--gradient {
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(255, 255, 255),
+    rgb(150, 150, 150)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white;
+}
+
+.hero__main-title--secondary {
+  position: absolute;
+  left: 120px;
+  top: 60px;
+  font-family: "Streamster";
+  font-size: 5rem;
+  /* transform: rotate(-20deg); */
+  color: var(--white);
+  text-shadow: 0px 0px 20px var(--light-blue), 0px 0px 30px var(--light-blue),
+    0px 0px 60px var(--light-blue);
+}
+
+.hero__triangle {
+  position: absolute;
+  transform: rotate(-5deg);
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 250px solid transparent;
+  border-top: 200px solid rgb(156, 41, 125);
 }
