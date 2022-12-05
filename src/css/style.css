@@ -51,13 +51,35 @@ body {
   color: var(--white);
 }
 
+.section {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 30px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  margin: 5px 0px;
+  padding: 5px 20px;
+}
+
 .heading {
-  margin: 5px 10px;
+  margin: 5px 0px;
   font-weight: 500;
 }
 
+.heading_xs {
+  font-size: 2.4rem;
+}
+
 .heading_s {
-  font-size: 3.2rem;
+  font-size: 3rem;
 }
 
 .heading_m {
@@ -67,17 +89,29 @@ body {
 .heading_l {
   font-size: 4.2rem;
 }
+.heading_xl {
+  font-size: 4.8rem;
+}
 
 .heading_streamster {
   font-family: "Streamster";
+  text-shadow: 0px 0px 5px var(--pink), 0px 0px 10px var(--pink),
+    0px 0px 20px var(--pink), 0px 0px 40px var(--pink);
 }
 
 .heading_alien_encounters {
   font-family: "Alien Encounters";
+  text-shadow: 0px 0px 5px var(--light-blue), 0px 0px 10px var(--light-blue),
+    0px 0px 20px var(--light-blue), 0px 0px 40px var(--light-blue);
+}
+
+.heading_quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.8rem;
 }
 
 .paragraph {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 400;
   font-family: "Quicksand", sans-serif;
   color: var(--text-white);
@@ -123,7 +157,7 @@ body {
   padding: 20px 10px;
   background: linear-gradient(
     90deg,
-    rgba(98, 0, 84, 0.5) 0%,
+    rgba(90, 0, 77, 0.5) 0%,
     rgba(56, 0, 56, 0.5) 25%,
     rgba(32, 1, 32, 0.5) 100%
   );
@@ -323,10 +357,6 @@ body {
 }
 
 .about {
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-self: center;
 }
 
 .about__container {
@@ -335,15 +365,15 @@ body {
   flex-direction: column;
   width: 90%;
   height: fit-content;
-  margin: 40px 10px;
+  margin: 40px 0px;
   padding: 40px 20px;
-  border: 1px solid var(--white);
+  border: 1px solid var(--text-white);
   border-radius: 10px;
   background: linear-gradient(
     140deg,
-    rgba(105, 13, 91, 0.5) 0%,
-    rgba(52, 0, 52, 0.5) 25%,
-    rgba(8, 75, 87, 0.5) 100%
+    rgba(128, 16, 111, 0.5) 0%,
+    rgba(52, 0, 52, 0.5) 30%,
+    rgba(70, 8, 87, 0.5) 100%
   );
   box-shadow: 0px 0px 40px 1px var(--light-blue);
   /* backdrop-filter: blur(10px); */
@@ -353,9 +383,6 @@ body {
   position: absolute;
   top: -40px;
   left: 20px;
-  font-size: 4.8rem;
-  text-shadow: 0px 0px 5px var(--pink), 0px 0px 10px var(--pink),
-    0px 0px 20px var(--pink), 0px 0px 40px var(--pink);
 }
 
 .about__technologies-used {
@@ -380,6 +407,67 @@ body {
   margin-top: 35px;
   filter: drop-shadow(0px 0px 15px var(--light-blue))
     drop-shadow(0px 0px 20px var(--light-blue));
-  /* drop-shadow(0px 0px 30px var(--light-blue)); */
-  /* drop-shadow(0px 0px 50px var(--light-blue)); */
+}
+
+.experience {
+  flex-direction: column;
+}
+
+.experience__title-container {
+  margin-bottom: 20px;
+}
+
+.experience__companies-description {
+  margin-top: 10px;
+}
+
+.experience_companies {
+}
+
+.experience__entry {
+  margin-top: 20px;
+}
+
+.experience__company-name {
+  color: var(--white);
+  text-shadow: 0px 0px 6px var(--pink), 0px 0px 10px var(--pink);
+  text-decoration: none;
+}
+
+.experience__entry-date {
+  margin-top: 5px;
+  font-size: 1.5rem;
+}
+
+.experience__entry-description {
+  margin: 15px 0px;
+}
+
+.experience__entry-tasks {
+  list-style: none;
+}
+
+.experience__entry-task {
+  position: relative;
+  width: 90%;
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+
+.experience__entry-task::before {
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  content: "▹";
+  top: 0;
+  left: 5px;
+  font-size: 2.2rem;
+  color: var(--white);
+  text-shadow: 0px 0px 10px var(--pink), 0px 0px 15px var(--pink);
+}
+
+.experience__entry-link {
+  color: var(--white);
+  text-shadow: 0px 0px 5px var(--pink), 0px 0px 10px var(--pink);
+  text-decoration: none;
 }
