@@ -119,6 +119,12 @@ body {
   color: var(--text-white);
 }
 
+.link {
+  color: var(--white);
+  text-shadow: 0px 0px 5px var(--pink), 0px 0px 10px var(--pink);
+  text-decoration: none;
+}
+
 .header {
   position: fixed;
   display: flex;
@@ -130,10 +136,19 @@ body {
   background: none;
 }
 
+.badge-message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid var(--pink);
+  border-radius: 10px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.4rem;
+}
+
 .header__logo {
   width: 35%;
-  filter: drop-shadow(0px 0px 25px var(--pink))
-    drop-shadow(0px 0px 35px var(--pink)) drop-shadow(0px 0px 50px var(--pink));
+  filter: drop-shadow(0px 0px 15px var(--pink))
+    drop-shadow(0px 0px 30px var(--pink)) drop-shadow(0px 0px 45px var(--pink));
 }
 
 .header__burger-icon {
@@ -157,6 +172,7 @@ body {
   height: 100vh;
   width: 70%;
   padding: 20px 10px;
+  border-left: 1px solid var(--pink);
   background: linear-gradient(
     90deg,
     rgba(90, 0, 77, 0.5) 0%,
@@ -164,7 +180,6 @@ body {
     rgba(32, 1, 32, 0.5) 100%
   );
   box-shadow: 0px 0px 60px 5px var(--pink);
-  border-left: 1px solid var(--pink);
   backdrop-filter: blur(10px);
 }
 
@@ -436,6 +451,17 @@ body {
   margin-bottom: 10px;
 }
 
+.experience__work-status {
+  background: linear-gradient(
+    135deg,
+    rgba(120, 0, 102, 0.559) 10%,
+    rgba(56, 0, 56, 0.5) 35%,
+    rgba(87, 4, 87, 0.587) 100%
+  );
+  box-shadow: 0px 0px 10px 1px var(--pink);
+  backdrop-filter: blur(10px);
+}
+
 .experience__companies-description {
 }
 
@@ -444,12 +470,6 @@ body {
 
 .experience__entry {
   margin-top: 20px;
-}
-
-.experience__company-name {
-  color: var(--white);
-  text-shadow: 0px 0px 6px var(--pink), 0px 0px 10px var(--pink);
-  text-decoration: none;
 }
 
 .experience__entry-date {
@@ -483,10 +503,4 @@ body {
   line-height: 20px;
   color: var(--white);
   text-shadow: 0px 0px 10px var(--pink), 0px 0px 15px var(--pink);
-}
-
-.experience__entry-link {
-  color: var(--white);
-  text-shadow: 0px 0px 5px var(--pink), 0px 0px 10px var(--pink);
-  text-decoration: none;
 }
