@@ -56,7 +56,8 @@ body {
 .section {
   display: flex;
   justify-content: center;
-  align-self: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   height: fit-content;
   margin-bottom: 30px;
@@ -113,6 +114,7 @@ body {
 }
 
 .paragraph {
+  margin-bottom: 10px;
   font-size: 1.6rem;
   font-weight: 400;
   font-family: "Quicksand", sans-serif;
@@ -125,6 +127,15 @@ body {
   text-decoration: none;
 }
 
+.badge-message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid var(--pink);
+  border-radius: 10px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.4rem;
+}
+
 .header {
   position: fixed;
   display: flex;
@@ -134,15 +145,6 @@ body {
   min-height: 7rem;
   padding: 5px 15px;
   background: none;
-}
-
-.badge-message {
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid var(--pink);
-  border-radius: 10px;
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.4rem;
 }
 
 .header__logo {
@@ -244,10 +246,8 @@ body {
 .hero {
   height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: baseline;
-  padding-top: 150px;
+  justify-content: center;
   background: url("../assets/images/hero_background.jpg");
   background-position: left;
   background-size: cover;
@@ -257,6 +257,7 @@ body {
   display: flex;
   position: relative;
   width: 100%;
+  height: 60%;
 }
 
 .hero_article--secondary {
@@ -265,12 +266,16 @@ body {
 }
 
 .hero__title-container {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: fit-content;
   width: 100%;
+}
+
+.hero__article-triangle-background {
+  position: absolute;
 }
 
 .hero__main-title {
@@ -334,15 +339,15 @@ body {
   transform: rotate(-10deg);
 }
 
-.hero__scroll-container {
+.hero__scroll-button-container {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
   bottom: 10px;
   width: 80%;
-  height: 100%;
+  height: fit-content;
 }
 
 .hero__scroll-button {
@@ -428,12 +433,14 @@ body {
 
 .experience {
   position: relative;
-  flex-direction: column;
+
+  padding: 50px 0px;
   background: linear-gradient(
-    180deg,
-    var(--dark-purple),
-    var(--dark-purple-gradient) 100%
-  );
+      180deg,
+      var(--dark-purple),
+      var(--dark-purple-gradient) 95%
+    ),
+    linear-gradient(0deg, var(--dark-purple), var(--dark-purple-gradient) 10%);
 }
 
 .experience::before {
@@ -443,7 +450,9 @@ body {
   height: 100%;
   z-index: -1;
   background-image: url("../assets/images/black_hole_lines_blue.png");
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   opacity: 0.2;
 }
 
@@ -463,13 +472,15 @@ body {
 }
 
 .experience__companies-description {
+  margin-top: 5px;
 }
 
 .experience_companies {
 }
 
 .experience__entry {
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .experience__entry-date {
