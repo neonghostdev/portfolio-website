@@ -324,22 +324,22 @@
             <div class="about__technologies-logos">
               <img
                 class="technology-logo"
-                src="assets/images/html_logo.png"
+                src="assets/icons/html_logo.png"
                 alt="HTML Logo"
               />
               <img
                 class="technology-logo"
-                src="assets/images/css_logo.png"
+                src="assets/icons/css_logo.png"
                 alt="CSS Logo"
               />
               <img
                 class="technology-logo"
-                src="assets/images/js_logo.png"
+                src="assets/icons/js_logo.png"
                 alt="JavaScript Logo"
               />
               <img
                 class="technology-logo"
-                src="assets/images/react_logo.png"
+                src="assets/icons/react_logo.png"
                 alt="JavaScript Logo"
               />
             </div>
@@ -544,18 +544,97 @@
           </p>
         </article>
         <article class="contact__form-container article">
-          <form class="contact__form" action="">
-            <input type="text" />
+          <form class="contact__form" id="contact" action="" autocomplete="off">
+            <input
+              class="contact__form-text-field"
+              type="text"
+              name="name"
+              placeholder="Name"
+              id="name"
+            />
+            <input
+              class="contact__form-text-field"
+              type="email"
+              name="email"
+              placeholder="Email"
+              id="email"
+            />
+            <input
+              class="contact__form-text-field"
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              id="subject"
+            />
+            <textarea
+              class="contact__form-text-field contact__form-text-area"
+              name="message"
+              placeholder="Message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <button class="contact__form-button">Submit</button>
           </form>
           <p class="contact__email paragraph">
             If you don't want to use the form you can send me an email at
             <a class="link" href="mailto:ghost@neonghost.dev"
-              >ghost@neonghost.dev</a
-            >
+              ><strong> ghost@neonghost.dev </strong>
+            </a>
           </p>
         </article>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <h2 class="footer_heading heading heading_l heading_streamster">
+        Follow me
+      </h2>
+      <div class="footer__socials">
+        <a class="footer__social-link" href="https://github.com/neonghostdev">
+          <img
+            class="footer__social-logo"
+            src="assets/icons/github_blue.png"
+            alt=""
+          />
+        </a>
+        <a
+          class="footer__social-link"
+          href="https://www.linkedin.com/in/jeanpaul-erazo-garcia-260182a6/"
+        >
+          <img
+            class="footer__social-logo"
+            src="assets/icons/linkedin_blue.png"
+            alt=""
+          />
+        </a>
+        <a
+          class="footer__social-link"
+          href="https://www.instagram.com/neonghostdev/"
+        >
+          <img
+            class="footer__social-logo"
+            src="assets/icons/instagram_blue.png"
+            alt=""
+          />
+        </a>
+        <a
+          class="footer__social-link"
+          href="https://www.youtube.com/channel/UCioHXaF2-XV-cUT6uuah-ng"
+        >
+          <img
+            class="footer__social-logo logo_m"
+            src="assets/icons/youtube_blue.png"
+            alt=""
+          />
+        </a>
+        <a class="footer__social-link" href="mailto:ghost@neonghost.dev">
+          <img
+            class="footer__social-logo logo_m"
+            src="assets/icons/email_blue.png"
+            alt=""
+          />
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

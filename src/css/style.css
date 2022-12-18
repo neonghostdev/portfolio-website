@@ -594,3 +594,94 @@ body {
   font-size: 1.6rem;
   margin: 5px 0px 0px 0px;
 }
+
+.contact {
+}
+
+.contact__form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact__form-text-field {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border-style: none;
+  border: 1px solid var(--pink);
+  box-shadow: 0px 0px 10px var(--pink);
+  background: linear-gradient(
+    135deg,
+    rgba(120, 0, 102, 0.559) 10%,
+    rgba(56, 0, 56, 0.5) 35%,
+    rgba(87, 4, 87, 0.587) 100%
+  );
+  color: var(--text-white);
+  font-family: "Quicksand";
+  font-size: 1.6rem;
+}
+
+.contact__form-text-field::placeholder {
+  color: #ced0d9c6;
+}
+
+.contact__form-text-area {
+  width: inherit;
+  height: inherit;
+}
+
+.contact__email {
+  text-align: center;
+}
+
+.contact__form-button {
+  width: 20rem;
+  height: 6rem;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-family: "Alien Encounters";
+  font-size: 2.6rem;
+  color: var(--black);
+  text-decoration: none;
+  background-color: var(--white);
+  border-radius: 20px;
+  text-shadow: 0px 0px 20px var(--light-blue), 0px 0px 30px var(--light-blue),
+    0px 0px 60px var(--light-blue);
+  box-shadow: inset 0px 0px 30px 1px var(--light-blue),
+    0px 0px 30px 1px var(--light-blue);
+  border: 1px solid var(--light-blue);
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.footer_heading {
+  margin-bottom: 15px;
+}
+
+.footer__socials {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer__social-logo {
+  width: 30px;
+  filter: drop-shadow(0px 0px 15px var(--light-blue))
+    drop-shadow(0px 0px 25px var(--light-blue));
+}
+
+.logo_m {
+  width: 35px;
+}
