@@ -671,17 +671,63 @@ body {
 
 .footer__socials {
   display: flex;
-  width: 90%;
   align-items: center;
+  width: 90%;
+  margin-bottom: 50px;
   justify-content: space-evenly;
 }
 
 .footer__social-logo {
-  width: 30px;
-  filter: drop-shadow(0px 0px 15px var(--light-blue))
-    drop-shadow(0px 0px 25px var(--light-blue));
+  width: 35px;
+  filter: drop-shadow(0px 0px 10px var(--light-blue))
+    drop-shadow(0px 0px 30px var(--light-blue));
 }
 
 .logo_m {
   width: 35px;
+}
+
+.footer__github-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__github-link {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-family: "Quicksand";
+  color: var(--text-white);
+}
+
+.footer__github-paragraph {
+  margin-bottom: 5px;
+  font-size: 1.4rem;
+  font-family: "Quicksand";
+}
+
+.footer__github-stats-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__github-icon {
+  position: relative;
+  top: -2px;
+  width: 15px;
+  margin-right: 5px;
+}
+
+.footer__github-stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 10px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.6rem;
+  font-family: "Alien Encounters";
+  text-shadow: 0px 0px 5px var(--light-blue);
 }
