@@ -28,16 +28,6 @@
   src: url("../assets/fonts/Streamster.ttf");
 }
 
-@font-face {
-  font-family: "Outrun future";
-  src: url("../assets/fonts/Outrun_future.otf");
-}
-
-@font-face {
-  font-family: "Rocket Rinder";
-  src: url("../assets/fonts/Rocket_Rinder.otf");
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -433,7 +423,6 @@ body {
 
 .experience {
   position: relative;
-
   padding: 50px 0px;
   background: linear-gradient(
       180deg,
@@ -517,7 +506,27 @@ body {
 }
 
 .youtube {
-  padding-bottom: 50px;
+  padding: 50px 0px;
+  /* padding-bottom: 50px; */
+  position: relative;
+  background: linear-gradient(
+      180deg,
+      var(--dark-purple),
+      var(--dark-purple-gradient) 70%
+    ),
+    linear-gradient(0deg, var(--dark-purple), var(--dark-purple-gradient) 50%);
+}
+
+.youtube::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("../assets/images/synthwave_background_2.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  opacity: 0.5;
 }
 
 .youtube__description {
@@ -596,6 +605,27 @@ body {
 }
 
 .contact {
+  padding: 50px 0px;
+  /* padding-bottom: 50px; */
+  position: relative;
+  background: linear-gradient(
+      180deg,
+      var(--dark-purple),
+      var(--dark-purple-gradient) 70%
+    ),
+    linear-gradient(0deg, var(--dark-purple), var(--dark-purple-gradient) 60%);
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("../assets/images/synthwave_background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.6;
 }
 
 .contact__form {
@@ -678,7 +708,7 @@ body {
 }
 
 .footer__social-logo {
-  width: 35px;
+  width: 30px;
   filter: drop-shadow(0px 0px 10px var(--light-blue))
     drop-shadow(0px 0px 30px var(--light-blue));
 }
