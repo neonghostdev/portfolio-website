@@ -127,14 +127,30 @@ body {
 }
 
 .header {
+  width: 100%;
   position: fixed;
-  display: flex;
   z-index: 3;
+  min-height: 7rem;
+}
+
+.header__icons-container {
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 7rem;
   padding: 5px 15px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(122, 0, 104, 0.146) 0%,
+    rgba(56, 0, 56, 0.329) 25%,
+    rgba(32, 1, 32, 0.493) 100%
+  );
+  backdrop-filter: blur(3px);
+}
+
+.header__icons-container--no-background {
   background: none;
+  backdrop-filter: none;
 }
 
 .header__logo {
