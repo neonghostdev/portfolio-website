@@ -217,10 +217,6 @@ body {
   /* border: 1px solid red; */
 }
 
-.mobile-menu__item {
-  /*  */
-}
-
 .mobile-menu__link {
   font-size: 3rem;
   text-decoration: none;
@@ -384,9 +380,6 @@ body {
     drop-shadow(0px 0px 50px var(--light-blue));
 }
 
-.about {
-}
-
 .about__container {
   position: relative;
   display: flex;
@@ -478,9 +471,6 @@ body {
 
 .experience__companies-description {
   margin-top: 5px;
-}
-
-.experience_companies {
 }
 
 .experience__entry {
@@ -602,10 +592,13 @@ body {
   text-shadow: 0px 0px 3px var(--light-blue), 0px 0px 5px var(--light-blue);
 }
 
-.youtube__video-data {
-  position: absolute;
+.youtube__video-data-container {
   display: flex;
-  width: 90%;
+}
+
+.youtube__video-data {
+  display: flex;
+  width: 50%;
   flex-direction: column;
   justify-content: space-evenly;
 }
@@ -618,6 +611,18 @@ body {
 .youtube__video-views {
   font-size: 1.6rem;
   margin: 5px 0px 0px 0px;
+}
+
+.youtube__link-icon-container {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: end;
+}
+
+.youtube__link-icon {
+  width: 35px;
+  filter: drop-shadow(0px 0px 5px var(--light-blue));
 }
 
 .contact {
