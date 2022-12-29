@@ -153,8 +153,14 @@ body {
   backdrop-filter: none;
 }
 
+.header__logo-link {
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+}
+
 .header__logo {
-  width: 35%;
+  width: 40%;
   filter: drop-shadow(0px 0px 15px var(--pink))
     drop-shadow(0px 0px 30px var(--pink)) drop-shadow(0px 0px 45px var(--pink));
 }
