@@ -82,6 +82,7 @@ body {
 .heading_l {
   font-size: 4.2rem;
 }
+
 .heading_xl {
   font-size: 4.8rem;
 }
@@ -133,7 +134,7 @@ body {
   min-height: 7rem;
 }
 
-.header__icons-container {
+.header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -148,7 +149,7 @@ body {
   backdrop-filter: blur(3px);
 }
 
-.header__icons-container--no-background {
+.header__container--no-background {
   background: none;
   backdrop-filter: none;
 }
@@ -160,7 +161,7 @@ body {
 }
 
 .header__logo {
-  width: 40%;
+  width: 35%;
   filter: drop-shadow(0px 0px 15px var(--pink))
     drop-shadow(0px 0px 30px var(--pink)) drop-shadow(0px 0px 45px var(--pink));
 }
@@ -173,6 +174,10 @@ body {
     drop-shadow(0px 0px 45px var(--light-blue))
     drop-shadow(0px 0px 50px var(--light-blue));
   border-radius: 20px;
+}
+
+.desktop-menu {
+  display: none;
 }
 
 .mobile-menu {
@@ -238,6 +243,7 @@ body {
   justify-content: center;
   width: 20rem;
   height: 8rem;
+  padding-top: 5px;
   margin-top: 50px;
   font-family: "Alien Encounters";
   font-size: 2.8rem;

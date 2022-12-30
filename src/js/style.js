@@ -9,7 +9,7 @@ function toggleHidden(element, elementBEMName) {
 const burgerMenu = document.querySelector("#burgerIcon");
 const closeMenuIcon = document.querySelector("#closeMenuIcon");
 const mobileMenu = document.querySelector("#mobileMenu");
-const headerIconsContainer = document.querySelector(".header__icons-container");
+const headerContainer = document.querySelector(".header__container");
 const mobileMenuLink = document.querySelectorAll(".mobile-menu__link");
 const mobileMenuButton = document.querySelector(".mobile-menu__button");
 
@@ -40,13 +40,9 @@ main.addEventListener("click", () => {
 // when the page is scrolled
 document.addEventListener("scroll", () => {
   if (window.scrollY === 0) {
-    headerIconsContainer.classList.add(
-      "header__icons-container--no-background"
-    );
+    headerContainer.classList.add("header__container--no-background");
   } else {
-    headerIconsContainer.classList.remove(
-      "header__icons-container--no-background"
-    );
+    headerContainer.classList.remove("header__container--no-background");
   }
 });
 

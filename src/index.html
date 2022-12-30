@@ -32,9 +32,7 @@
 
   <body>
     <header class="header">
-      <div
-        class="header__icons-container header__icons-container--no-background"
-      >
+      <div class="header__container header__container--no-background">
         <a class="header__logo-link" href="/">
           <img
             src="./assets/images/neon_ghost_logo_v2.png"
@@ -42,6 +40,22 @@
             class="header__logo"
           />
         </a>
+
+        <nav class="desktop-menu" id="desktopMenu">
+          <ul class="desktop-menu__list">
+            <li class="desktop-menu__item">
+              <a href="#about" class="desktop-menu__link">About Me</a>
+            </li>
+            <li class="desktop-menu__item">
+              <a href="#experience" class="desktop-menu__link">Experience</a>
+            </li>
+            <li class="desktop-menu__item">
+              <a href="#youtube" class="desktop-menu__link">YouTube</a>
+            </li>
+          </ul>
+          <a href="#contact" class="desktop-menu__button">Contact</a>
+        </nav>
+
         <img
           id="burgerIcon"
           class="header__burger-icon"
@@ -49,6 +63,7 @@
           alt="menu"
         />
       </div>
+
       <nav class="mobile-menu mobile-menu--hidden" id="mobileMenu">
         <img
           id="closeMenuIcon"
