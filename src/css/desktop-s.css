@@ -89,40 +89,33 @@
 }
 
 .hero__article {
-  width: 38%;
-  min-width: 640px;
-  max-width: 645px;
+  width: 40%;
+  min-width: 420px;
 }
 
 .hero__article-triangle-background {
-  top: -45px;
 }
 
 .hero__main-title {
-  font-size: 14rem;
-  line-height: 12rem;
+  font-size: 10rem;
+  line-height: 8rem;
 }
 
 .hero__main-greeting {
-  font-size: 5.5rem;
-  top: -110px;
+  font-size: 4.5rem;
+  top: -80px;
 }
 
 .hero__main-title--secondary {
-  font-size: 8.5rem;
-  left: 200px;
-  top: 190px;
+  font-size: 6rem;
+  left: 150px;
+  top: 130px;
 }
 
 .hero__scroll-button-container {
-  width: 35%;
-}
-
-.hero__scroll-button {
-  font-size: 2rem;
-  height: 40px;
+  width: 30%;
 }
 
 .hero__scroll-arrow-down {
-  width: 5%;
+  width: 6%;
 }

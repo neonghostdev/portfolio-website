@@ -10,12 +10,26 @@
   --white: #ffffff;
   --black: #0b0b0c;
   --dark-purple: #180423;
-  --light-purple: #3f33cc;
+  --light-purple: #3e096e;
   --pink: #ff00d9;
   --light-blue: #5beaf7;
   --text-white: #ced0d9;
   --dark-purple-gradient: #1804234d;
   --light-blue-gradient: #03242f81;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(58, 6, 66);
+  border: 3px solid rgb(65, 7, 99);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-purple-gradient);
 }
 
 @font-face {
@@ -364,7 +378,6 @@ body {
 .hero__scroll-button-container {
   position: absolute;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   bottom: 10px;
@@ -376,13 +389,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  height: 40px;
+  width: 45%;
+  height: 30px;
+  padding-top: 3px;
   margin-bottom: 10px;
   color: var(--white);
   font-family: "Alien Encounters";
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   text-shadow: 0px 0px 5px var(--light-blue), 0px 0px 10px var(--light-blue),
     0px 0px 20px var(--light-blue), 0px 0px 40px var(--light-blue);
   border: 1px solid var(--white);
@@ -392,12 +406,14 @@ body {
 }
 
 .hero__scroll-arrow-down {
-  width: 10%;
-  margin: 3px;
-  filter: drop-shadow(0px 0px 10px var(--light-blue))
+  position: relative;
+  bottom: 3px;
+  width: 7%;
+  margin: 0px 15px;
+  filter: drop-shadow(0px 0px 5px var(--light-blue))
+    drop-shadow(0px 0px 10px var(--light-blue))
     drop-shadow(0px 0px 20px var(--light-blue))
-    drop-shadow(0px 0px 30px var(--light-blue))
-    drop-shadow(0px 0px 50px var(--light-blue));
+    drop-shadow(0px 0px 25px var(--light-blue));
 }
 
 .about {
