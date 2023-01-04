@@ -239,7 +239,6 @@ body {
   margin-top: 50px;
   list-style: none;
   text-align: center;
-  /* border: 1px solid red; */
 }
 
 .mobile-menu__link {
@@ -296,8 +295,7 @@ body {
   height: 60%;
 }
 
-.hero_article--secondary {
-  display: none;
+.hero__article--secondary {
   position: absolute;
 }
 
@@ -339,7 +337,7 @@ body {
     0px 0px 20px var(--pink), 0px 0px 40px var(--pink);
 }
 
-.hero_article--secondary .hero__main-greeting {
+.hero__article--secondary .hero__main-greeting {
   position: absolute;
   top: -90px;
   left: 10px;
@@ -363,7 +361,7 @@ body {
     0px 0px 20px var(--pink), 0px 0px 40px var(--pink);
 }
 
-.hero_article--secondary .hero__main-title--secondary {
+.hero__article--secondary .hero__main-title--secondary {
   position: absolute;
   left: 210px;
   top: 120px;
@@ -420,7 +418,7 @@ body {
   padding: 100px 0px 0px 0px;
 }
 
-.about__container {
+.about__content-container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -437,7 +435,6 @@ body {
     rgba(71, 8, 89, 0.5) 100%
   );
   box-shadow: 0px 0px 40px 1px var(--light-blue);
-  /* backdrop-filter: blur(10px); */
 }
 
 .about__heading {
@@ -821,4 +818,8 @@ body {
   font-size: 1.6rem;
   font-family: "Alien Encounters";
   text-shadow: 0px 0px 5px var(--light-blue);
+}
+
+.hidden {
+  display: none;
 }

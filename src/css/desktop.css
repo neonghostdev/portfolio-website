@@ -1,7 +1,3 @@
-.hidden {
-  display: none;
-}
-
 .header {
   width: 100%;
 }
@@ -14,6 +10,24 @@
 
 .section {
   padding: 0px 150px;
+  height: 100vh;
+}
+
+.article {
+  padding: 10px 130px;
+}
+
+.paragraph {
+  margin-bottom: 15px;
+  font-size: 2.2rem;
+}
+
+.heading_xs {
+  font-size: 3rem;
+}
+
+.heading_xl {
+  font-size: 7rem;
 }
 
 .header__container {
@@ -80,9 +94,6 @@
   border: 1px solid var(--pink);
 }
 
-.hero {
-}
-
 .hero::before {
   background: linear-gradient(180deg, var(--dark-purple), #18042300 80%),
     linear-gradient(0deg, var(--dark-purple), #18042300 50%);
@@ -114,6 +125,17 @@
   top: 190px;
 }
 
+.hero__article--secondary .hero__main-greeting {
+  font-size: 5.5rem;
+  top: -110px;
+}
+
+.hero__article--secondary .hero__main-title--secondary {
+  font-size: 8.5rem;
+  left: 300px;
+  top: 190px;
+}
+
 .hero__scroll-button-container {
   width: 35%;
 }
@@ -125,4 +147,29 @@
 
 .hero__scroll-arrow-down {
   width: 5%;
+}
+
+.about {
+  /* padding: 150px 0px 0px 0px; */
+}
+
+.about__content-container {
+  width: 80%;
+  padding: 70px 40px;
+}
+
+.about__heading {
+  top: -45px;
+  left: 40px;
+}
+
+.about__technologies-logos {
+  /* width: 50%; */
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.technology-logo {
+  width: 12%;
+  margin: 0px 25px;
 }
