@@ -202,3 +202,33 @@
 .experience__entry {
   width: 90%;
 }
+
+.youtube__videos-carrousel-container {
+  width: 70%;
+  min-width: 700px;
+  min-height: fit-content;
+}
+
+.youtube__video-card {
+  width: 40%;
+  min-width: 440px;
+  max-width: 440px;
+  height: 450px;
+}
+
+.youtube__video-title {
+  height: 40%;
+}
+
+.youtube__video-data-container {
+  position: relative;
+  bottom: -20px;
+}
+
+.youtube__video-date {
+  margin-bottom: 0px;
+}
+
+.youtube__video-views {
+  margin-bottom: 0px;
+}
