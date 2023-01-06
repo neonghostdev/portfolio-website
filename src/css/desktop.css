@@ -14,12 +14,12 @@
 }
 
 .article {
-  padding: 10px 130px;
+  padding: 10px 250px;
 }
 
 .paragraph {
   margin-bottom: 15px;
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 .heading_xs {
@@ -28,6 +28,19 @@
 
 .heading_xl {
   font-size: 7rem;
+}
+
+.heading_quicksand {
+  font-size: 2.2rem;
+}
+
+.section-heading::after {
+  margin-left: 30px;
+}
+
+.badge-message {
+  font-size: 2rem;
+  padding: 10px 15px;
 }
 
 .header__container {
@@ -149,13 +162,9 @@
   width: 5%;
 }
 
-.about {
-  /* padding: 150px 0px 0px 0px; */
-}
-
 .about__content-container {
-  width: 80%;
-  padding: 70px 40px;
+  width: 70%;
+  padding: 70px 35px;
 }
 
 .about__heading {
@@ -172,4 +181,24 @@
 .technology-logo {
   width: 12%;
   margin: 0px 25px;
+  filter: drop-shadow(0px 0px 10px var(--light-blue))
+    drop-shadow(0px 0px 25px var(--light-blue));
+}
+
+.experience {
+  background: linear-gradient(
+      180deg,
+      var(--dark-purple),
+      var(--dark-purple-gradient) 95%
+    ),
+    linear-gradient(0deg, var(--dark-purple), var(--dark-purple-gradient) 30%);
+}
+
+.experience__entries {
+  display: flex;
+  justify-content: center;
+}
+
+.experience__entry {
+  width: 90%;
 }

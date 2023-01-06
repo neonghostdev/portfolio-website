@@ -13,7 +13,7 @@
   --light-purple: #3e096e;
   --pink: #ff00d9;
   --light-blue: #5beaf7;
-  --text-white: #ced0d9;
+  --text-white: #dcdde2;
   --dark-purple-gradient: #1804234d;
   --light-blue-gradient: #03242f81;
 }
@@ -116,6 +116,23 @@ body {
 .heading_quicksand {
   font-family: "Quicksand", sans-serif;
   font-size: 1.8rem;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+}
+
+.section-heading::after {
+  content: "";
+  position: relative;
+  top: 5px;
+  display: block;
+  margin-left: 20px;
+  height: 2px;
+  width: 50%;
+  background: rgba(255, 32, 244, 0.322);
+  box-shadow: 0px 0px 10px var(--pink);
 }
 
 .paragraph {
@@ -513,6 +530,9 @@ body {
 .experience__entry {
   margin-top: 10px;
   margin-bottom: 15px;
+  padding: 10px 20px;
+  border: 1px solid var(--light-purple);
+  border-radius: 15px;
 }
 
 .experience__entry-date {
