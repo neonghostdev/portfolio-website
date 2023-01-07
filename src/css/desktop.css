@@ -23,7 +23,8 @@
 }
 
 .heading_xs {
-  font-size: 3rem;
+  font-size: 3.4rem;
+  letter-spacing: 2px;
 }
 
 .heading_xl {
@@ -231,4 +232,40 @@
 
 .youtube__video-views {
   margin-bottom: 0px;
+}
+
+.contact {
+  padding: 0px 210px;
+}
+
+.contact__form-container {
+  align-items: center;
+}
+
+.contact__form {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+
+.contact__form-text-field {
+  font-size: 1.8rem;
+}
+
+#name {
+  width: 40%;
+}
+
+#email {
+  width: 58%;
+}
+
+.contact__form-button {
+  margin-top: 30px;
+}
+
+.contact__email {
+  margin-top: 25px;
 }
