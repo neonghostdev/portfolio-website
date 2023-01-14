@@ -140,6 +140,7 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   font-family: "Quicksand", sans-serif;
+  line-height: 1.3;
   color: var(--text-white);
 }
 
@@ -773,6 +774,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 20px 20px;
+  background: linear-gradient(0deg, #460958a2, transparent);
 }
 
 .footer_heading {
