@@ -14,7 +14,7 @@
 }
 
 .article {
-  padding: 10px 250px;
+  padding: 10px 270px;
 }
 
 .paragraph {
@@ -174,7 +174,6 @@
 }
 
 .about__technologies-logos {
-  /* width: 50%; */
   margin-top: 40px;
   justify-content: center;
 }
@@ -187,12 +186,16 @@
 }
 
 .experience {
+  margin: 0px 0px;
   background: linear-gradient(
       180deg,
       var(--dark-purple),
       var(--dark-purple-gradient) 95%
     ),
     linear-gradient(0deg, var(--dark-purple), var(--dark-purple-gradient) 30%);
+}
+.experience__title-container {
+  margin-top: 220px;
 }
 
 .experience__entries {
@@ -202,6 +205,14 @@
 
 .experience__entry {
   width: 90%;
+}
+
+.youtube {
+  margin: 150px 0px;
+}
+
+.youtube__title-container {
+  margin-top: 100px;
 }
 
 .youtube__videos-carrousel-container {
@@ -236,6 +247,11 @@
 
 .contact {
   padding: 0px 210px;
+  margin: 150px 0px;
+}
+
+.contact__title-container {
+  margin-top: 150px;
 }
 
 .contact__form-container {
