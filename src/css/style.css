@@ -71,6 +71,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 1920px;
   height: fit-content;
   margin: 5px 0px;
   padding: 5px 20px;
@@ -449,6 +450,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 90%;
+  max-width: 1920px;
   height: fit-content;
   margin: 40px 0px;
   padding: 40px 20px;
