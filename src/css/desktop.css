@@ -10,7 +10,6 @@
 
 .section {
   padding: 0px 150px;
-  height: 100vh;
 }
 
 .article {
@@ -194,8 +193,9 @@
     ),
     linear-gradient(0deg, var(--dark-purple), var(--dark-purple-gradient) 30%);
 }
+
 .experience__title-container {
-  margin-top: 220px;
+  margin-top: 100px;
 }
 
 .experience__entries {
@@ -268,6 +268,11 @@
 
 .contact__form-text-field {
   font-size: 1.8rem;
+  height: 50px;
+}
+
+.contact__form-text-area {
+  height: inherit;
 }
 
 #name {

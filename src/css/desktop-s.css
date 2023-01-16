@@ -9,8 +9,20 @@
 }
 
 .section {
-  padding: 0px 150px;
+  padding: 0px 240px;
   height: 100vh;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+}
+
+.heading_xl {
+  font-size: 5rem;
+}
+
+.badge-message {
+  font-size: 1.6rem;
 }
 
 .header__container {
@@ -45,11 +57,11 @@
 }
 
 .desktop-menu__item {
-  margin: 7px 15px 0px 15px;
+  margin: 7px 10px 0px 10px;
 }
 
 .desktop-menu__link {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   text-decoration: none;
   text-align: center;
   font-family: "Alien Encounters";
@@ -110,4 +122,148 @@
 
 .hero__scroll-arrow-down {
   width: 6%;
+}
+
+.about {
+  margin: 100px 0px;
+}
+
+.about__content-container {
+  width: 95%;
+  margin-top: 100px;
+  padding: 50px 30px;
+}
+
+.about__heading {
+  top: -35px;
+  left: 40px;
+}
+
+.about__technologies-logos {
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.technology-logo {
+  width: 12%;
+  margin: 0px 20px;
+  filter: drop-shadow(0px 0px 10px var(--light-blue))
+    drop-shadow(0px 0px 25px var(--light-blue));
+}
+
+.experience {
+  height: fit-content;
+  margin: 100px 0px 150px 0px;
+}
+
+.experience__title-container {
+  margin-top: 100px;
+}
+
+.experience__entries {
+  display: flex;
+  justify-content: center;
+}
+
+.experience__entry {
+  width: 90%;
+}
+
+.youtube {
+  height: fit-content;
+  margin: 150px 0px 150px 0px;
+}
+
+.youtube__title-container {
+  margin-top: 100px;
+}
+
+.youtube__videos-carrousel-container {
+  width: 100%;
+  max-width: 1100px;
+  min-height: 400px;
+}
+
+.youtube__video-title {
+  height: 40%;
+}
+
+.youtube__video-data-container {
+  position: relative;
+  bottom: -20px;
+}
+
+.youtube__video-card {
+  width: 40%;
+  min-width: 340px;
+  max-width: 340px;
+  height: 360px;
+}
+
+.youtube__video-date {
+  margin-bottom: 0px;
+}
+
+.youtube__video-views {
+  margin-bottom: 0px;
+}
+
+.contact {
+  height: fit-content;
+  padding: 0px 240px;
+  margin: 150px 0px 150px 0px;
+}
+
+.contact__title-container {
+  margin-top: 100px;
+}
+
+.contact__form-container {
+  align-items: center;
+}
+
+.contact__form {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+
+.contact__form-text-field {
+  font-size: 1.6rem;
+  height: 45px;
+}
+
+.contact__form-text-area {
+  height: inherit;
+}
+
+#name {
+  width: 40%;
+}
+
+#email {
+  width: 58%;
+}
+
+.contact__form-button {
+  margin-top: 35px;
+}
+
+.footer__socials {
+  width: 40%;
+}
+
+.footer__github-stats-container {
+  margin-top: 10px;
+}
+
+.footer__github-stat {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.footer__github-icon {
+  width: 20px;
 }
