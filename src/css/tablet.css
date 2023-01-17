@@ -1,0 +1,134 @@
+.article {
+  padding: 5px 50px;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+}
+
+.header__logo {
+  width: 15%;
+}
+
+.header__burger-icon {
+  width: 5%;
+}
+
+.mobile-menu {
+  width: 40%;
+}
+
+.mobile-menu__link {
+  font-size: 2.8rem;
+}
+
+.mobile-menu__button {
+  width: 16rem;
+  height: 7rem;
+  font-size: 2.6rem;
+}
+
+.hero {
+  background-position: center;
+}
+
+.hero::before {
+  background: linear-gradient(180deg, var(--dark-purple), #18042300 80%),
+    linear-gradient(0deg, var(--dark-purple), #18042300 50%);
+}
+
+.hero__article {
+  display: flex;
+  position: relative;
+  width: 50%;
+  max-width: 385px;
+  height: 65%;
+}
+
+.hero__main-title {
+  font-size: 9.5rem;
+  top: 100px;
+}
+
+.hero__main-greeting {
+  top: -80px;
+  font-size: 3.4rem;
+}
+
+.hero__main-title--secondary {
+  font-size: 6rem;
+}
+
+.hero__article--secondary .hero__main-greeting {
+  top: -90px;
+  font-size: 3.4rem;
+}
+
+.hero__article--secondary {
+  position: absolute;
+}
+
+.hero__scroll-button-container {
+  width: 70%;
+}
+
+.hero__scroll-arrow-down {
+  width: 5%;
+}
+
+.about__content-container {
+  width: 80%;
+}
+
+.about__technologies-logos {
+  justify-content: space-evenly;
+}
+
+.technology-logo {
+  width: 12%;
+  margin-top: 30px;
+}
+
+.youtube__videos-carrousel-container {
+  width: 90%;
+  max-width: 700px;
+  min-height: 350px;
+}
+
+.youtube__video-card {
+  width: 45%;
+  min-width: 300px;
+  max-width: 300px;
+  height: 340px;
+}
+
+.contact__form-text-field {
+  font-size: 1.6rem;
+  height: 40px;
+}
+
+.contact__form-text-area {
+  height: inherit;
+}
+
+.contact__form-button {
+  height: 5rem;
+  font-size: 2.4rem;
+}
+
+.footer__socials {
+  width: 60%;
+}
+
+.footer__github-stat {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.footer__github-icon {
+  width: 20px;
+}
+
+.hidden {
+  display: none;
+}

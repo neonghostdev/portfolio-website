@@ -98,11 +98,13 @@
   width: 38%;
   min-width: 420px;
   max-width: 425px;
+  height: 60%;
 }
 
 .hero__main-title {
   font-size: 10rem;
   line-height: 8rem;
+  top: 120px;
 }
 
 .hero__main-greeting {
