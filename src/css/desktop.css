@@ -15,6 +15,7 @@
 .article {
   padding: 10px 270px;
   min-width: 1400px;
+  max-width: 1900px;
 }
 
 .paragraph {
@@ -166,6 +167,7 @@
 .about__content-container {
   width: 70%;
   padding: 70px 35px;
+  max-width: 1200px;
 }
 
 .about__heading {
@@ -218,7 +220,7 @@
 
 .youtube__videos-carrousel-container {
   width: 70%;
-  max-width: 1100px;
+  max-width: 1200px;
   min-height: 500px;
 }
 
@@ -252,7 +254,7 @@
 }
 
 .contact__title-container {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .contact__form-container {
@@ -269,7 +271,7 @@
 
 .contact__form-text-field {
   font-size: 1.8rem;
-  height: 50px;
+  height: 55px;
 }
 
 .contact__form-text-area {
