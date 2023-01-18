@@ -43,6 +43,10 @@
   min-width: 110px;
 }
 
+.header__logo:hover {
+  transform: scale(1.05);
+}
+
 .header__burger-icon {
   display: none;
 }
@@ -77,9 +81,11 @@
   color: var(--white);
 }
 
-.desktop-menu__link:hover {
-  text-decoration: underline overline double;
-  text-decoration-thickness: 1px;
+.desktop-menu__item:hover {
+  transform: scale(1.1);
+  text-decoration: underline double;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 7px;
 }
 
 .desktop-menu__button {
@@ -102,8 +108,7 @@
 }
 
 .desktop-menu__button:hover {
-  /* color: var(--white); */
-  transform: scale(0.95);
+  transform: scale(1.05);
 }
 
 .hero::before {
@@ -285,7 +290,7 @@
 }
 
 .contact__form-button:hover {
-  transform: scale(0.95);
+  transform: scale(1.05);
 }
 
 .footer__socials {

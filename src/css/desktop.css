@@ -116,8 +116,8 @@
 
 .hero__article {
   width: 38%;
-  min-width: 640px;
-  max-width: 645px;
+  min-width: 580px;
+  max-width: 600px;
 }
 
 .hero__article-triangle-background {
@@ -125,19 +125,19 @@
 }
 
 .hero__main-title {
-  font-size: 14rem;
-  line-height: 12rem;
+  font-size: 13rem;
+  line-height: 11rem;
 }
 
 .hero__main-greeting {
-  font-size: 5.5rem;
+  font-size: 5rem;
   top: -110px;
 }
 
 .hero__main-title--secondary {
-  font-size: 8.5rem;
+  font-size: 8rem;
   left: 200px;
-  top: 190px;
+  top: 170px;
 }
 
 .hero__article--secondary .hero__main-greeting {
@@ -165,7 +165,7 @@
 }
 
 .about__content-container {
-  width: 70%;
+  width: 65%;
   padding: 70px 35px;
   max-width: 1200px;
 }
