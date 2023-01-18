@@ -77,6 +77,11 @@
   color: var(--white);
 }
 
+.desktop-menu__link:hover {
+  text-decoration: underline overline double;
+  text-decoration-thickness: 1px;
+}
+
 .desktop-menu__button {
   display: flex;
   align-items: center;
@@ -94,6 +99,11 @@
     0px 0px 60px var(--pink);
   box-shadow: inset 0px 0px 30px 1px var(--pink), 0px 0px 50px 1px var(--pink);
   border: 1px solid var(--pink);
+}
+
+.desktop-menu__button:hover {
+  /* color: var(--white); */
+  transform: scale(0.95);
 }
 
 .hero::before {
@@ -162,6 +172,10 @@
     drop-shadow(0px 0px 25px var(--light-blue));
 }
 
+.technology-logo:hover {
+  transform: scale(1.1);
+}
+
 .experience {
   height: fit-content;
   margin: 100px 0px 150px 0px;
@@ -210,6 +224,11 @@
   min-width: 340px;
   max-width: 340px;
   height: 360px;
+}
+
+.youtube__video-card:hover {
+  border: 1px solid var(--light-blue);
+  box-shadow: 0px 0px 10px 1px var(--light-blue);
 }
 
 .youtube__video-date {
@@ -261,10 +280,20 @@
 
 .contact__form-button {
   margin-top: 35px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.contact__form-button:hover {
+  transform: scale(0.95);
 }
 
 .footer__socials {
   width: 40%;
+}
+
+.footer__social-logo:hover {
+  transform: scale(1.2);
 }
 
 .footer__github-stats-container {
