@@ -32,6 +32,7 @@
       media="screen and (min-width: 1440px)"
     />
     <script src="./js/style.js" defer></script>
+    <script src="./js/main.js" defer></script>
     <title>Neon Ghost Dev</title>
   </head>
 
@@ -482,112 +483,7 @@
             So here are some of my most recent videos (Spanish):
           </p>
         </article>
-        <article class="youtube__videos-carrousel-container">
-          <a
-            href="http://google.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="youtube__video-card"
-          >
-            <img
-              class="youtube__video-thumbnail"
-              src="assets/images/01.png"
-              alt=""
-            />
-            <div class="youtube__video-content">
-              <h3 class="youtube__video-title heading heading_quicksand">
-                <strong> ¿Puedo ser PROGRAMADOR? Aquí comienza todo... </strong>
-              </h3>
-              <div class="youtube__video-data-container">
-                <div class="youtube__video-data">
-                  <p class="paragraph youtube__video-date">2 Months ago</p>
-                  <p class="paragraph youtube__video-views">
-                    <strong>12.567 Views</strong>
-                  </p>
-                </div>
-                <div class="youtube__link-icon-container">
-                  <img
-                    class="youtube__link-icon"
-                    src="assets/icons/link_icon_blue.png"
-                    alt="link icon"
-                  />
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a
-            href="http://google.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="youtube__video-card"
-          >
-            <img
-              class="youtube__video-thumbnail"
-              src="assets/images/02.png"
-              alt=""
-            />
-            <div class="youtube__video-content">
-              <h3 class="youtube__video-title heading heading_quicksand">
-                <strong>
-                  ¿Puedo ser PROGRAMADOR? Aquí comienza todo... Aquí comienza
-                  todo...
-                </strong>
-              </h3>
-              <div class="youtube__video-data-container">
-                <div class="youtube__video-data">
-                  <p class="paragraph youtube__video-date">2 Months ago</p>
-                  <p class="paragraph youtube__video-views">
-                    <strong>12.567 Views</strong>
-                  </p>
-                </div>
-                <div class="youtube__link-icon-container">
-                  <img
-                    class="youtube__link-icon"
-                    src="assets/icons/link_icon_blue.png"
-                    alt="link icon"
-                  />
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a
-            href="http://google.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="youtube__video-card"
-          >
-            <img
-              class="youtube__video-thumbnail"
-              src="assets/images/03.jpg"
-              alt=""
-            />
-            <div class="youtube__video-content">
-              <h3 class="youtube__video-title heading heading_quicksand">
-                <strong>
-                  ¿Puedo ser PROGRAMADOR? Aquí comienza todo... Aquí comienza
-                  todo...Aquí comienza todo...Aquí comienza todo...
-                </strong>
-              </h3>
-              <div class="youtube__video-data-container">
-                <div class="youtube__video-data">
-                  <p class="paragraph youtube__video-date">2 Months ago</p>
-                  <p class="paragraph youtube__video-views">
-                    <strong>12.567 Views</strong>
-                  </p>
-                </div>
-                <div class="youtube__link-icon-container">
-                  <img
-                    class="youtube__link-icon"
-                    src="assets/icons/link_icon_blue.png"
-                    alt="link icon"
-                  />
-                </div>
-              </div>
-            </div>
-          </a>
-        </article>
+        <article class="youtube__videos-carrousel-container"></article>
       </section>
 
       <section id="contact" class="contact section">
@@ -617,6 +513,7 @@
               name="name"
               placeholder="Name"
               id="name"
+              required
             />
             <input
               class="contact__form-text-field"
@@ -624,6 +521,7 @@
               name="email"
               placeholder="Email"
               id="email"
+              required
             />
             <input
               class="contact__form-text-field"
@@ -631,6 +529,7 @@
               name="subject"
               placeholder="Subject"
               id="subject"
+              required
             />
             <textarea
               class="contact__form-text-field contact__form-text-area"
@@ -639,6 +538,7 @@
               id="message"
               cols="30"
               rows="10"
+              required
             ></textarea>
             <button class="contact__form-button">Submit</button>
           </form>

@@ -26,6 +26,10 @@
   font-size: 5rem;
 }
 
+.section-heading::after {
+  width: 50%;
+}
+
 .badge-message {
   font-size: 1.6rem;
 }
@@ -212,7 +216,7 @@
   width: 95%;
   min-width: 700px;
   max-width: 1100px;
-  min-height: 400px;
+  min-height: 380px;
 }
 
 .youtube__video-title {
@@ -227,8 +231,10 @@
 .youtube__video-card {
   width: 40%;
   min-width: 340px;
-  max-width: 340px;
-  height: 360px;
+  max-width: 345px;
+  height: 340px;
+  min-height: 340px;
+  max-height: 345px;
 }
 
 .youtube__video-card:hover {
@@ -286,6 +292,7 @@
 .contact__form-button {
   margin-top: 35px;
   padding-top: 5px;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 

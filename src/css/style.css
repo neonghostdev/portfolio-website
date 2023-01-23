@@ -131,7 +131,7 @@ body {
   display: block;
   margin-left: 20px;
   height: 2px;
-  width: 50%;
+  width: 40%;
   background: rgba(255, 32, 244, 0.322);
   box-shadow: 0px 0px 10px var(--pink);
 }
@@ -489,7 +489,7 @@ body {
 }
 
 .technology-logo {
-  width: 22%;
+  width: 20%;
   border-radius: 15px;
   margin-top: 35px;
   filter: drop-shadow(0px 0px 15px var(--light-blue))
@@ -610,7 +610,11 @@ body {
 .youtube__video-card {
   display: inline-block;
   width: 70%;
-  height: 330px;
+  min-width: 285px;
+  max-width: 300px;
+  height: 310px;
+  min-height: 310px;
+  max-height: 315px;
   margin-right: 25px;
   padding-bottom: 10px;
   border: 1px solid var(--pink);
@@ -645,7 +649,7 @@ body {
   height: 60%;
   overflow-y: scroll;
   overflow-wrap: break-word;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   letter-spacing: 0px;
   text-shadow: 0px 0px 3px var(--light-blue), 0px 0px 5px var(--light-blue);
 }
@@ -733,6 +737,11 @@ body {
   color: var(--text-white);
   font-family: "Quicksand";
   font-size: 1.6rem;
+}
+
+.contact__form-invalid-field {
+  box-shadow: 0px 0px 10px red;
+  border: 1px solid red;
 }
 
 .contact__form-text-field::placeholder {

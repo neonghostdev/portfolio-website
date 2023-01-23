@@ -221,14 +221,16 @@
 .youtube__videos-carrousel-container {
   width: 70%;
   max-width: 1200px;
-  min-height: 500px;
+  min-height: 470px;
 }
 
 .youtube__video-card {
   width: 40%;
   min-width: 440px;
   max-width: 440px;
-  height: 450px;
+  height: 420px;
+  min-height: 420px;
+  max-height: 425px;
 }
 
 .youtube__video-title {
