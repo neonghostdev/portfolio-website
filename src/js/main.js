@@ -143,9 +143,6 @@ async function renderYoutubeVideoCards() {
   }
 
   youtubeVideosCarrousel.append(...videoCards);
-
-  console.log(videoCards);
-  console.log(videos);
 }
 
 async function sendContactFormData() {
@@ -230,6 +227,24 @@ function validateForm() {
   return nameIsValid && emailIsValid && subjectIsValid && messageIsValid;
 }
 
+async function fetchGithubStats() {
+  const githubStarsStat = document.querySelector("#githubStars");
+  const githubForksStat = document.querySelector("#githubForks");
+  const GITHUB_URL =
+    "https://api.github.com/repos/neonghostdev/portfolio-website";
+
+  const result = await fetch(GITHUB_URL);
+  const githubStats = await result.json();
+
+  if (result.status === 200) {
+    githubStarsStat.textContent = githubStats.stargazers_count;
+    githubForksStat.textContent = githubStats.forks_count;
+  } else {
+    githubStarsStat.textContent = 0;
+    githubForksStat.textContent = 0;
+  }
+}
+
 const contactFormContainer = document.querySelector(".contact__form-container");
 const contactFormButton = document.querySelector("#contactFormSubmit");
 const formFields = document.querySelectorAll(".contact__form-text-field");
@@ -265,4 +280,5 @@ errorMessageButton.addEventListener("click", () => {
   contactFormContainer.classList.remove("hidden");
 });
 
-// renderYoutubeVideoCards();
+renderYoutubeVideoCards();
+fetchGithubStats();
