@@ -299,6 +299,11 @@
   margin-top: 25px;
 }
 
+.contact__message-text {
+  text-align: center;
+  font-size: 2.2rem;
+}
+
 .footer__socials {
   width: 40%;
 }

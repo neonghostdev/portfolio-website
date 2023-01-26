@@ -148,4 +148,121 @@ async function renderYoutubeVideoCards() {
   console.log(videos);
 }
 
-renderYoutubeVideoCards();
+async function sendContactFormData() {
+  const contactFormContainer = document.querySelector(
+    ".contact__form-container"
+  );
+  const contactForm = document.querySelector("#contactForm");
+  const name = document.querySelector("#name");
+  const email = document.querySelector("#email");
+  const subject = document.querySelector("#subject");
+  const message = document.querySelector("#message");
+  const contactMessagesContainer = document.querySelector(".contact__message");
+  const thankyouMessage = document.querySelector(".contact__thankyou-message");
+  const errorMessage = document.querySelector(".contact__error-message");
+
+  const URL = "https://formsubmit.co/ajax/ghost@neonghost.dev";
+  const body = {
+    name: name.value.trim(),
+    email: email.value.trim(),
+    subject: subject.value.trim(),
+    message: message.value.trim(),
+  };
+
+  const options = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify(body),
+  };
+
+  const sentEmail = await fetch(URL, options);
+
+  if (sentEmail.status === 200) {
+    console.log("Email successfully sent");
+    contactFormContainer.classList.add("hidden");
+    contactMessagesContainer.classList.remove("hidden");
+    thankyouMessage.classList.remove("hidden");
+    contactForm.reset();
+  } else {
+    contactFormContainer.classList.add("hidden");
+    contactMessagesContainer.classList.remove("hidden");
+    errorMessage.classList.remove("hidden");
+    console.error("Something went wrong: " + sentEmail.json());
+  }
+}
+
+function validateForm() {
+  const name = document.querySelector("#name");
+  const email = document.querySelector("#email");
+  const subject = document.querySelector("#subject");
+  const message = document.querySelector("#message");
+  const emailRegExp =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+  let nameIsValid = true;
+  let emailIsValid = true;
+  let subjectIsValid = true;
+  let messageIsValid = true;
+
+  if (name.value.trim() === "") {
+    nameIsValid = false;
+    name.classList.add("contact__form-invalid-field");
+  }
+
+  if (email.value.trim() === "" || !emailRegExp.test(email.value.trim())) {
+    emailIsValid = false;
+    email.classList.add("contact__form-invalid-field");
+  }
+
+  if (subject.value.trim() === "") {
+    subjectIsValid = false;
+    subject.classList.add("contact__form-invalid-field");
+  }
+
+  if (message.value.trim() === "") {
+    messageIsValid = false;
+    message.classList.add("contact__form-invalid-field");
+  }
+
+  return nameIsValid && emailIsValid && subjectIsValid && messageIsValid;
+}
+
+const contactFormContainer = document.querySelector(".contact__form-container");
+const contactFormButton = document.querySelector("#contactFormSubmit");
+const formFields = document.querySelectorAll(".contact__form-text-field");
+const contactMessagesContainer = document.querySelector(".contact__message");
+const thankyouMessage = document.querySelector(".contact__thankyou-message");
+const errorMessage = document.querySelector(".contact__error-message");
+const thankyouMessageButton = document.querySelector("#contactThankyouButton");
+const errorMessageButton = document.querySelector("#contactErrorButton");
+
+contactFormButton.addEventListener("click", (event) => {
+  if (validateForm()) {
+    sendContactFormData();
+  }
+});
+
+formFields.forEach((element) => {
+  element.addEventListener("input", () => {
+    element.classList.remove("contact__form-invalid-field");
+  });
+});
+
+thankyouMessageButton.addEventListener("click", () => {
+  contactMessagesContainer.classList.add("hidden");
+  thankyouMessage.classList.add("hidden");
+  errorMessage.classList.add("hidden");
+  contactFormContainer.classList.remove("hidden");
+});
+
+errorMessageButton.addEventListener("click", () => {
+  contactMessagesContainer.classList.add("hidden");
+  thankyouMessage.classList.add("hidden");
+  errorMessage.classList.add("hidden");
+  contactFormContainer.classList.remove("hidden");
+});
+
+// renderYoutubeVideoCards();

@@ -506,7 +506,7 @@
           </p>
         </article>
         <article class="contact__form-container article">
-          <form class="contact__form" id="contact" action="" autocomplete="off">
+          <form class="contact__form" id="contactForm">
             <input
               class="contact__form-text-field"
               type="text"
@@ -540,14 +540,58 @@
               rows="10"
               required
             ></textarea>
-            <button class="contact__form-button">Submit</button>
+            <button
+              type="button"
+              class="contact__form-button"
+              id="contactFormSubmit"
+            >
+              Submit
+            </button>
           </form>
           <p class="contact__email paragraph">
-            If you don't want to use the form you can send me an email at
+            If You don't want to use the form, You can send me an email at
             <a class="link" href="mailto:ghost@neonghost.dev"
               ><strong> ghost@neonghost.dev </strong>
             </a>
           </p>
+        </article>
+
+        <article class="contact__message article hidden">
+          <div
+            class="contact__message-container contact__thankyou-message hidden"
+          >
+            <h2 class="heading heading_alien_encounters heading_m">
+              Thank you
+            </h2>
+            <p class="paragraph contact__message-text">
+              Thanks for your message, I will reply as soon as possible 🧑🏻‍💻
+            </p>
+            <button
+              type="button"
+              id="contactThankyouButton"
+              class="contact__form-button"
+            >
+              Dismiss
+            </button>
+          </div>
+
+          <div class="contact__message-container contact__error-message hidden">
+            <h2 class="heading heading_alien_encounters heading_m">Error</h2>
+            <p class="paragraph contact__message-text">
+              Ups! something went wrong, please try using the form later or send
+              me your message at
+              <a class="link" href="mailto:ghost@neonghost.dev"
+                ><strong> ghost@neonghost.dev 🧑🏻‍💻 </strong>
+              </a>
+            </p>
+            <button
+              type="button"
+              id="contactErrorButton"
+              class="contact__form-button"
+            >
+              Retry
+            </button>
+          </div>
         </article>
       </section>
     </main>
