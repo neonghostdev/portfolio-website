@@ -841,6 +841,10 @@ body {
   color: var(--text-white);
 }
 
+.footer__github-link:hover {
+  filter: drop-shadow(0px 0px 5px var(--light-blue));
+}
+
 .footer__github-paragraph {
   margin-bottom: 5px;
   font-size: 1.4rem;
