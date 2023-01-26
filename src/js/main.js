@@ -122,7 +122,7 @@ async function renderYoutubeVideoCards() {
 
     const youtubeLinkIcon = document.createElement("img");
     youtubeLinkIcon.classList.add("youtube__link-icon");
-    youtubeLinkIcon.src = "assets/icons/link_icon_blue.png";
+    youtubeLinkIcon.src = "./src/assets/icons/link_icon_blue.png";
     youtubeLinkIcon.alt = "link to video";
 
     youtubeLinkIconContainer.append(youtubeLinkIcon);
